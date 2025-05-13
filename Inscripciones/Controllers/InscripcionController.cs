@@ -39,6 +39,21 @@ namespace Inscripciones.Controllers
 
             return Ok("Inscripción registrada");
         }
+        [HttpGet("api/cursos")]
+        public async Task<ActionResult<IEnumerable<CursoDto>>> ObtenerCursos()
+        {
+
+            var curso = await _httpClient.GetFromJsonAsync<CursoDto>($"api/Curso/GetCursos");
+            if (curso == null)
+                return NotFound("Curso no encontrado");
+
+
+           
+
+            return Ok(curso);
+        }
+
+
 
     }
 }

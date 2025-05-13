@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Inscripciones.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Inscripciones.Data
 {
@@ -8,5 +9,8 @@ namespace Inscripciones.Data
         {
         }
         public DbSet<Models.Inscripcion> Inscripcion { get; set; }
+
+       
+
     }
 }

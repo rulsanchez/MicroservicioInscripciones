@@ -361,3 +361,20 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Archivos binarios y temporales
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Archivos de configuración locales y secretos
+appsettings.Development.json
+secrets.json
+**/secrets.json
+
+# Archivos de entorno de Visual Studio
+*.dbmdl
+*.log
+*.pdb
+*.cache
